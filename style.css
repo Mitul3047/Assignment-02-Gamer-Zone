@@ -3,19 +3,28 @@
     padding: 0;
 }
 
+/* Common */
+.color-pink {
+    color: #FF42A5;
+}
 
+/* nav */
 nav {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 45px 240px;
 }
 
-/* nav */
 
 .nav-logo {
     display: flex;
     /* justify-content: center; */
     align-items: center;
+}
+
+.logo-name {
+    font-size: 45px;
+    font-weight: 700;
 }
 
 .nav-container,
@@ -45,10 +54,200 @@ nav {
 
 .nav-menu li a {
     text-decoration: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .follow-us {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 17px 24px;
+}
+
+.nav-logo img {
+    width: 86px;
+    margin-right: 20px;
+}
+
+/* section */
+
+section {
+    border: 2px solid red;
+    /* background-image: url("./images/Group\ 14.png");
+    background-position: left;
+    background-repeat: no-repeat; */
+
+}
+
+/* banner */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid green;
+    padding: 20px 240px 0px 240px;
+    /* gap: 374px; */
+
+}
+
+
+.secondery-title {
+
+    color: #0B0223;
+    /* text-align: center; */
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.banner-title {
+    /* text-align: center; */
+    font-family: Work Sans;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-container p {
+    margin-bottom: 17px;
+    color: #534C64;
+    /* text-align: center; */
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.banner-content {
+    width: 100%;
+    position: relative;
+
+}
+
+.banner-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.btn-signin {
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    padding: 20px 40px;
+    border: 0px;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.rouge {
+    background: #4EC5F7;
+}
+
+
+/* card */
+
+.card-section {
+    margin-top: 120px;
+    padding: 0px 240px;
+}
+
+.card-title {
+    color: #0B0223;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-description {
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.card-container{
+    /* display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    width: 100%;
+    /* gap: 20px;* */
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    
+
+}
+
+.card-container img{
+    width: 100%;
+    height: 90%;
+    /* margin-bottom: 24px; */
+}
+
+.card-container h4{
+    color: #534C64;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; 
+}
+
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    nav, .card-section {
+        padding: 0px;
+    }
+
+    .nav-container,
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
 }
